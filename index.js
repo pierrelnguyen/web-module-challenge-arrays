@@ -145,11 +145,16 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(arr, str){
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === str) {
+      arr.splice(i, 1);
+    }
+  }
+  return arr;
 }
 
-
+console.log(removeFlavorByName(originalFlavors, 'Banana Nut Fudge'));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
